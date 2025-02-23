@@ -1,0 +1,143 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('https://i.pinimg.com/736x/1e/22/02/1e2202687798e1b74f31fd580bc05708.jpg')no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: magenta; /* Magenta text */
+    position: relative;
+}
+
+/* Calendar Container */
+.calendar-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: magenta; /* Magenta text */
+}
+
+/* Cute Image in Transparent Shade */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: auto;
+}
+
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    color: magenta; /* Magenta text */
+}
+
+/* Navigation Buttons */
+button {
+    background: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: hotpink;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: hotpink;
+    color: white;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 14px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    color: magenta; /* Magenta text */
+}
+
+/* Individual Day */
+.day {
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: magenta; /* Magenta text */
+}
+
+.current-day {
+    background: pink;
+    color: white;
+    font-weight: bold;
+}
+
+/* Notes Section */
+.notes-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    color: magenta; /* Magenta text */
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid pink;
+    outline: none;
+    color: magenta; /* Magenta text */
+}
+
+button {
+    background: pink;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hotpink;
+}
+
+/* Make all text magenta */
+h1, h2, h3, p, label {
+    color: magenta;
+}

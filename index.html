@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Calendar Agenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <div class="image-overlay">
+            <img src="https://i.pinimg.com/736x/1a/fd/8d/1afd8d5a63b56f457f51d89458855d89.jpg" alt="Cute Background">
+        </div>
+
+        <div class="calendar-header">
+            <button id="prevMonth">❮</button>
+            <h2 id="monthYear">Month Year</h2>
+            <button id="nextMonth">❯</button>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+
+    <div class="notes-section">
+        <h3>Agenda</h3>
+        <input type="date" id="datePicker">
+        <textarea id="notes" placeholder="Write your plans here..."></textarea>
+        <button id="save">Save</button>
+        <ul id="agendaDisplay"></ul>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
