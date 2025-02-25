@@ -17,7 +17,7 @@ app.whenReady().then(() => {
     });
 
     const indexPath = path.join(__dirname, 'index.html');
-    console.log(`Loading: ${indexPath}`);  // ✅ Debugging
+    console.log(`Loading: ${indexPath}`); // Debugging
     mainWindow.loadFile(indexPath).catch(err => console.error('Failed to load HTML:', err));
 
     mainWindow.once('ready-to-show', () => {
