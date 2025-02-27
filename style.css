@@ -23,7 +23,7 @@ body {
     color: magenta; /* Magenta text */
 }
 
-/* Cute Image in Transparent Shade */
+/* Transparent Shade */
 .image-overlay {
     position: absolute;
     top: 0;
